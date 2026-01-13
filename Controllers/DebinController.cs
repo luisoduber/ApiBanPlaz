@@ -20,6 +20,10 @@ public class DebinController : ControllerBase
     private readonly IConfiguration _config;
     string urlBan = "";
 
+
+
+
+
     TokenDIResp _TokenDIResp = new TokenDIResp();
     public DebinController(IConfiguration config, NonceService nonceService, CredApiService credApiService, CredApiRsService credApiRsService)
     {
