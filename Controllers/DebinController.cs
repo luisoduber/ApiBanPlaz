@@ -1,0 +1,181 @@
+﻿using ApiBanPlaz.models.TokenDl;
+using ApiBanPlaz.Servicios;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Net.Http.Headers;
+using Newtonsoft.Json;
+using System.Diagnostics;
+using System.Net.Http.Headers;
+using System.Security.Cryptography;
+using System.Security.Cryptography.Xml;
+using System.Text;
+
+[ApiController]
+[Route("v1/cce/debinm")]
+public class DebinController : ControllerBase
+{
+    private readonly NonceService _nonceService;
+    private readonly CredApiService _credApiService;
+    private readonly CredApiRsService _credApiRsService;
+    private readonly IConfiguration _config;
+    string urlBan = "";
+
+    TokenDIResp _TokenDIResp = new TokenDIResp();
+    public DebinController(IConfiguration config, NonceService nonceService, CredApiService credApiService, CredApiRsService credApiRsService)
+    {
+        _nonceService = nonceService;
+        _credApiService = credApiService;
+        _credApiRsService = credApiRsService;
+        _config = config;
+        urlBan = _config["urlBan"].ToString();
+    }
+
+    [HttpPost("tokenDI")]
+    public async Task<IActionResult> TokenDI()
+    {
+        // 1. Leer el body como string "crudo"
+        string reqTokeDI="";
+        using (var reader = new StreamReader(Request.Body, Encoding.UTF8))
+        {
+            reqTokeDI = await reader.ReadToEndAsync();
+        }
+
+        var _ReqTokeDI = JsonConvert.DeserializeObject<TokenDIReq>(reqTokeDI);
+        if (_ReqTokeDI == null) return BadRequest("Cuerpo de petición inválido.");
+
+        string nonce = await _nonceService.ObtNonce();
+        var cred = await _credApiRsService.ObtCredApi();
+        if (cred == null) return NotFound();
+
+        string path = "v1/cce/debinm/tokenDI";
+        string apiSignature = ApiSignatureGen.Generar(
+            path,
+            nonce,
+            reqTokeDI,
+            cred.apiKeySecret
+        );
+
+        _TokenDIResp = await SolTokenDI(reqTokeDI, cred.ApiKey,apiSignature, nonce);
+        //return Ok(new { nonce,cred.ApiKey,cred.apiKeySecret,apiSignature});
+
+        return Ok(new
+        {
+            _TokenDIResp.CodigoRespuesta,
+            _TokenDIResp.DescripcionCliente,
+            _TokenDIResp.DescripcionSistema,
+            _TokenDIResp.FechaHora
+        });
+    }
+
+    public async Task<TokenDIResp> SolTokenDI(string prmJson, string prmApiKey, 
+                                         string prmApiSignature, string prmNonce)
+    {
+        string rsDat = "";
+
+        string codigoRespuesta = "";
+        string descripcionCliente = "";
+        string descripcionSistema = "";
+        string fechaHora = "";
+
+        using (var client = new HttpClient())
+        {
+            var content = new StringContent(prmJson, Encoding.UTF8, "application/json");
+            client.BaseAddress = new Uri(urlBan);
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Add("api-key", prmApiKey);
+            client.DefaultRequestHeaders.Add("api-signature", prmApiSignature);
+            client.DefaultRequestHeaders.Add("nonce", prmNonce);
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+            using (var Res = await client.PostAsync("v1/cce/debinm/tokenDI", content))
+            {
+                if (Res.Headers.TryGetValues("codigoRespuesta", out var values)) { codigoRespuesta= values.FirstOrDefault(); }
+                if (Res.Headers.TryGetValues("descripcionCliente", out var values1)) { descripcionCliente = values1.FirstOrDefault(); }
+                if (Res.Headers.TryGetValues("descripcionSistema", out var values2)) { descripcionSistema = values2.FirstOrDefault(); }
+                if (Res.Headers.TryGetValues("fechaHora", out var values3)) { fechaHora = values3.FirstOrDefault(); }
+
+                //Debug.WriteLine("codigoRespuest: "+codigoRespuesta);
+                //Debug.WriteLine("descripcionCliente: " + descripcionCliente);
+                //Debug.WriteLine("descripcionSistema : " + descripcionSistema);
+                //Debug.WriteLine("fechaHora : " + fechaHora);
+                //Debug.WriteLine("urlBan: " + urlBan + "v1/cce/debinm/tokenDI");
+
+                _TokenDIResp.CodigoRespuesta = codigoRespuesta;
+                _TokenDIResp.DescripcionCliente = descripcionCliente;
+                _TokenDIResp.DescripcionSistema = descripcionSistema;
+                _TokenDIResp.FechaHora = fechaHora;
+
+                // rsDat = await Res.Content.ReadAsStringAsync();
+                // _TokenDIResp = JsonConvert.DeserializeObject<TokenDIResp>(rsDat);
+            }
+        }
+        return _TokenDIResp;
+    }
+
+    [HttpPost("GenCredApi")]
+    public async Task<IActionResult> CrearCred()
+    {
+        string apiKey = ApiKeyGen.GenApiKey();
+        string apiKeySecret = ApiKeySecretGen.GenKeySecret();
+        await _credApiService.CrearAsync(apiKey,apiKeySecret);
+
+        return Ok(new
+        {
+            apiKey = apiKey,
+            apiKeySecret = apiKeySecret // ⚠️ mostrar SOLO esta vez
+        });
+    }
+
+    public static class ApiKeyGen
+    {
+        public static string GenApiKey()
+        {
+            // 16 bytes = 32 caracteres hex
+            byte[] bytes = new byte[16];
+
+            using (var rng = RandomNumberGenerator.Create())
+            {
+                rng.GetBytes(bytes);
+            }
+
+            return Convert.ToHexString(bytes).ToLower();
+        }
+    }
+
+    public static class ApiKeySecretGen
+    {
+        public static string GenKeySecret(int bytes = 16)
+        {
+            var buffer = new byte[bytes];
+            using var rng = RandomNumberGenerator.Create();
+            rng.GetBytes(buffer);
+
+            return Convert.ToHexString(buffer).ToLower(); //  32
+        }
+    }
+
+public static class ApiSignatureGen
+{
+    public static string Generar(string path, string nonce, string body, string secret)
+    {
+        // 1. Recrear la cadena de firma exactamente como en el JS de Postman:
+        // let signature = `/${apiPath}${nonce}${body}`;
+        // Asegúrate de que 'path' no tenga la '/' inicial al pasarlo, o ajusta aquí:
+        string signatureRaw = $"/{path}{nonce}{body}";
+
+        // 2. Convertir a bytes usando UTF-8
+        byte[] keyBytes = Encoding.UTF8.GetBytes(secret);
+        byte[] messageBytes = Encoding.UTF8.GetBytes(signatureRaw);
+
+        // 3. Calcular HMAC SHA384
+        using (var hmac = new HMACSHA384(keyBytes))
+        {
+            byte[] hashBytes = hmac.ComputeHash(messageBytes);
+
+            // 4. Convertir a Hexadecimal (minúsculas como hace CryptoJS por defecto)
+            return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
+        }
+    }
+}
+
+}

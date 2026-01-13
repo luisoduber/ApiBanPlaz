@@ -1,0 +1,214 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|c:\\users\\programacion\\desktop\\apibanplaz\\controllers\\debincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:controllers\\debincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|c:\\users\\programacion\\desktop\\apibanplaz\\servicios\\grdtokendireqservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:servicios\\grdtokendireqservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|c:\\users\\programacion\\desktop\\apibanplaz\\servicios\\nonceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:servicios\\nonceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|c:\\users\\programacion\\desktop\\apibanplaz\\models\\tokendl\\tokendiresp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:models\\tokendl\\tokendiresp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|c:\\users\\programacion\\desktop\\apibanplaz\\models\\entities\\contnonce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:models\\entities\\contnonce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|c:\\users\\programacion\\desktop\\apibanplaz\\models\\tokendl\\credapirs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:models\\tokendl\\credapirs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|c:\\users\\programacion\\desktop\\apibanplaz\\models\\tokendl\\credapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:models\\tokendl\\credapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|c:\\users\\programacion\\desktop\\apibanplaz\\servicios\\credapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:servicios\\credapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|c:\\users\\programacion\\desktop\\apibanplaz\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|c:\\users\\programacion\\desktop\\apibanplaz\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|c:\\users\\programacion\\desktop\\apibanplaz\\servicios\\credapirsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:servicios\\credapirsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|c:\\users\\programacion\\desktop\\apibanplaz\\data\\banplazdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:data\\banplazdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GrdTokenDIReqService.cs",
+              "DocumentMoniker": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\Servicios\\GrdTokenDIReqService.cs",
+              "RelativeDocumentMoniker": "Servicios\\GrdTokenDIReqService.cs",
+              "ToolTip": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\Servicios\\GrdTokenDIReqService.cs",
+              "RelativeToolTip": "Servicios\\GrdTokenDIReqService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T20:30:49.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TokenDIResp.cs",
+              "DocumentMoniker": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\models\\TokenDl\\TokenDIResp.cs",
+              "RelativeDocumentMoniker": "models\\TokenDl\\TokenDIResp.cs",
+              "ToolTip": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\models\\TokenDl\\TokenDIResp.cs",
+              "RelativeToolTip": "models\\TokenDl\\TokenDIResp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T19:33:19.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-13T16:25:52.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CredApiRsService.cs",
+              "DocumentMoniker": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\Servicios\\CredApiRsService.cs",
+              "RelativeDocumentMoniker": "Servicios\\CredApiRsService.cs",
+              "ToolTip": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\Servicios\\CredApiRsService.cs",
+              "RelativeToolTip": "Servicios\\CredApiRsService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAADwvxEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T19:40:59.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CredApiRs.cs",
+              "DocumentMoniker": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\models\\TokenDl\\CredApiRs.cs",
+              "RelativeDocumentMoniker": "models\\TokenDl\\CredApiRs.cs",
+              "ToolTip": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\models\\TokenDl\\CredApiRs.cs",
+              "RelativeToolTip": "models\\TokenDl\\CredApiRs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T19:25:32.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CredApiService.cs",
+              "DocumentMoniker": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\Servicios\\CredApiService.cs",
+              "RelativeDocumentMoniker": "Servicios\\CredApiService.cs",
+              "ToolTip": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\Servicios\\CredApiService.cs",
+              "RelativeToolTip": "Servicios\\CredApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T16:42:43.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CredApi.cs",
+              "DocumentMoniker": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\models\\TokenDl\\CredApi.cs",
+              "RelativeDocumentMoniker": "models\\TokenDl\\CredApi.cs",
+              "ToolTip": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\models\\TokenDl\\CredApi.cs",
+              "RelativeToolTip": "models\\TokenDl\\CredApi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T16:33:47.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DebinController.cs",
+              "DocumentMoniker": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\Controllers\\DebinController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DebinController.cs",
+              "ToolTip": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\Controllers\\DebinController.cs",
+              "RelativeToolTip": "Controllers\\DebinController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowHgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-10T20:18:42.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BanPlazDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\Data\\BanPlazDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\BanPlazDbContext.cs",
+              "ToolTip": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\Data\\BanPlazDbContext.cs",
+              "RelativeToolTip": "Data\\BanPlazDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-10T21:22:18.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T17:15:16.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NonceService.cs",
+              "DocumentMoniker": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\Servicios\\NonceService.cs",
+              "RelativeDocumentMoniker": "Servicios\\NonceService.cs",
+              "ToolTip": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\Servicios\\NonceService.cs",
+              "RelativeToolTip": "Servicios\\NonceService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T13:21:59.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContNonce.cs",
+              "DocumentMoniker": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\models\\Entities\\ContNonce.cs",
+              "RelativeDocumentMoniker": "models\\Entities\\ContNonce.cs",
+              "ToolTip": "C:\\Users\\programacion\\Desktop\\ApiBanPlaz\\models\\Entities\\ContNonce.cs",
+              "RelativeToolTip": "models\\Entities\\ContNonce.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T13:17:17.284Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
