@@ -22,7 +22,7 @@ builder.Services.AddDbContext<BanPlazDbContext>(options =>
 builder.Services.AddScoped<CredApiService>();
 builder.Services.AddScoped<CredApiRsService>();
 builder.Services.AddScoped<NonceService>();
-builder.Services.AddScoped<GrdTokenDIReqService>();
+builder.Services.AddScoped<TokenDIService>();
 
 var app = builder.Build();
 

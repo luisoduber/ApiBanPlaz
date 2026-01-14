@@ -6,13 +6,13 @@ namespace ApiBanPlaz.models.TokenDl
     {
         [Required]
         [StringLength(3)]
-        public string Moneda { get; set; } = "VES";
+        public string Moneda { get; set; }
 
         [Required]
-        public string Canal { get; set; } = "23";
+        public string Canal { get; set; }
 
         [Required]
-        public string Tvalidacion_p { get; set; }   // C = Cuenta, T = Teléfono
+        public string Tvalidacion_p { get; set; } 
 
         [Required]
         [StringLength(12, MinimumLength = 12)]
@@ -33,7 +33,7 @@ namespace ApiBanPlaz.models.TokenDl
         public string Cod_banco_p { get; set; }
 
         [Required]
-        public decimal Monto { get; set; }
+        public string Monto { get; set; }
 
         public string? Direccion_ip { get; set; }
     }

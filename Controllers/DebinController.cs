@@ -1,4 +1,5 @@
-﻿using ApiBanPlaz.models.TokenDl;
+﻿using ApiBanPlaz.models.Entities;
+using ApiBanPlaz.models.TokenDl;
 using ApiBanPlaz.Servicios;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -17,21 +18,23 @@ public class DebinController : ControllerBase
     private readonly NonceService _nonceService;
     private readonly CredApiService _credApiService;
     private readonly CredApiRsService _credApiRsService;
+
+    private readonly TokenDIService _TokenDIService;
     private readonly IConfiguration _config;
     string urlBan = "";
-
-
-
-
+    int idTokenDI = 0;
 
     TokenDIResp _TokenDIResp = new TokenDIResp();
-    public DebinController(IConfiguration config, NonceService nonceService, CredApiService credApiService, CredApiRsService credApiRsService)
+    TokenDI _TokenDI = new TokenDI();
+    public DebinController(IConfiguration config, NonceService nonceService, CredApiService credApiService, 
+                        CredApiRsService credApiRsService, TokenDIService tokenDIService)
     {
         _nonceService = nonceService;
         _credApiService = credApiService;
         _credApiRsService = credApiRsService;
         _config = config;
         urlBan = _config["urlBan"].ToString();
+        _TokenDIService = tokenDIService;
     }
 
     [HttpPost("tokenDI")]
@@ -62,12 +65,40 @@ public class DebinController : ControllerBase
         _TokenDIResp = await SolTokenDI(reqTokeDI, cred.ApiKey,apiSignature, nonce);
         //return Ok(new { nonce,cred.ApiKey,cred.apiKeySecret,apiSignature});
 
+        _TokenDI.IdTokenDI= await _TokenDIService.GrdTokenDIAsync(
+            _ReqTokeDI.Moneda,
+            _ReqTokeDI.Canal,
+            _ReqTokeDI.Tvalidacion_p,
+            _ReqTokeDI.Identificacion_p,
+            _ReqTokeDI.Cuenta_cobrador,
+            _ReqTokeDI.Cuenta_pagador,
+            _ReqTokeDI.Telefono_pagador,
+            _ReqTokeDI.Cod_banco_p,
+            _ReqTokeDI.Monto,
+            _ReqTokeDI.Direccion_ip,
+            reqTokeDI
+            );
+
+        string jsonTokenDIResp = JsonConvert.SerializeObject(_TokenDIResp);
+
+        bool rsValTokDIResp = await _TokenDIService.GrdTokenDIRespAsync(
+            _TokenDI.IdTokenDI,
+            _TokenDIResp.CodigoRespuesta,
+            _TokenDIResp.DescripcionCliente,
+            _TokenDIResp.DescripcionSistema,
+            _TokenDIResp.FechaHora,
+            jsonTokenDIResp);
+
+
         return Ok(new
         {
+            _TokenDI.IdTokenDI,
+             rsValTokDIResp,
             _TokenDIResp.CodigoRespuesta,
             _TokenDIResp.DescripcionCliente,
             _TokenDIResp.DescripcionSistema,
             _TokenDIResp.FechaHora
+
         });
     }
 

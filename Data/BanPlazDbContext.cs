@@ -16,6 +16,7 @@ public class BanPlazDbContext : DbContext
 
         modelBuilder.Entity<ContNonce>().HasNoKey();
         modelBuilder.Entity<CredApiRs>().HasNoKey();
+        modelBuilder.Entity<TokenDI>().HasNoKey();
     }
 
 

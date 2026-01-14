@@ -3,52 +3,52 @@
   "WorkspaceRootPath": "E:\\GITHUB\\ApiBanPlaz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|e:\\github\\apibanplaz\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|e:\\github\\apibanplaz\\controllers\\debincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:controllers\\debincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|e:\\github\\apibanplaz\\servicios\\grdtokendireqservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:servicios\\grdtokendireqservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|e:\\github\\apibanplaz\\models\\responses\\debinresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:models\\responses\\debinresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|e:\\github\\apibanplaz\\servicios\\nonceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:servicios\\nonceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|e:\\github\\apibanplaz\\servicios\\tokendiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:servicios\\tokendiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|e:\\github\\apibanplaz\\models\\tokendl\\tokendi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:models\\tokendl\\tokendi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|e:\\github\\apibanplaz\\models\\tokendl\\tokendiresp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:models\\tokendl\\tokendiresp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|e:\\github\\apibanplaz\\models\\entities\\contnonce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:models\\entities\\contnonce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|e:\\github\\apibanplaz\\servicios\\nonceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:servicios\\nonceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|e:\\github\\apibanplaz\\models\\tokendl\\credapirs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:models\\tokendl\\credapirs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|e:\\github\\apibanplaz\\models\\tokendl\\credapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:models\\tokendl\\credapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|e:\\github\\apibanplaz\\servicios\\credapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:servicios\\credapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|e:\\github\\apibanplaz\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|e:\\github\\apibanplaz\\data\\banplazdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:data\\banplazdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|e:\\github\\apibanplaz\\servicios\\credapirsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:servicios\\credapirsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|e:\\github\\apibanplaz\\data\\banplazdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:data\\banplazdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|e:\\github\\apibanplaz\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|e:\\github\\apibanplaz\\models\\entities\\contnonce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:models\\entities\\contnonce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|e:\\github\\apibanplaz\\models\\tokendl\\tokendireq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:models\\tokendl\\tokendireq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|e:\\github\\apibanplaz\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478511EF-4291-437A-8EB6-6D6F2800DAAF}|ApiBanPlaz.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,23 +58,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DebinResult.cs",
+              "DocumentMoniker": "E:\\GITHUB\\ApiBanPlaz\\models\\Responses\\DebinResult.cs",
+              "RelativeDocumentMoniker": "models\\Responses\\DebinResult.cs",
+              "ToolTip": "E:\\GITHUB\\ApiBanPlaz\\models\\Responses\\DebinResult.cs",
+              "RelativeToolTip": "models\\Responses\\DebinResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T21:03:26.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TokenDIReq.cs",
+              "DocumentMoniker": "E:\\GITHUB\\ApiBanPlaz\\models\\TokenDl\\TokenDIReq.cs",
+              "RelativeDocumentMoniker": "models\\TokenDl\\TokenDIReq.cs",
+              "ToolTip": "E:\\GITHUB\\ApiBanPlaz\\models\\TokenDl\\TokenDIReq.cs",
+              "RelativeToolTip": "models\\TokenDl\\TokenDIReq.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T16:55:17.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TokenDI.cs",
+              "DocumentMoniker": "E:\\GITHUB\\ApiBanPlaz\\models\\TokenDl\\TokenDI.cs",
+              "RelativeDocumentMoniker": "models\\TokenDl\\TokenDI.cs",
+              "ToolTip": "E:\\GITHUB\\ApiBanPlaz\\models\\TokenDl\\TokenDI.cs",
+              "RelativeToolTip": "models\\TokenDl\\TokenDI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T16:17:51.89Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GrdTokenDIReqService.cs",
-              "DocumentMoniker": "E:\\GITHUB\\ApiBanPlaz\\Servicios\\GrdTokenDIReqService.cs",
-              "RelativeDocumentMoniker": "Servicios\\GrdTokenDIReqService.cs",
-              "ToolTip": "E:\\GITHUB\\ApiBanPlaz\\Servicios\\GrdTokenDIReqService.cs",
-              "RelativeToolTip": "Servicios\\GrdTokenDIReqService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAaAAAAAAAAAA==",
+              "Title": "TokenDIService.cs",
+              "DocumentMoniker": "E:\\GITHUB\\ApiBanPlaz\\Servicios\\TokenDIService.cs",
+              "RelativeDocumentMoniker": "Servicios\\TokenDIService.cs",
+              "ToolTip": "E:\\GITHUB\\ApiBanPlaz\\Servicios\\TokenDIService.cs",
+              "RelativeToolTip": "Servicios\\TokenDIService.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAvwEcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-13T20:30:49.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DebinController.cs",
+              "DocumentMoniker": "E:\\GITHUB\\ApiBanPlaz\\Controllers\\DebinController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DebinController.cs",
+              "ToolTip": "E:\\GITHUB\\ApiBanPlaz\\Controllers\\DebinController.cs",
+              "RelativeToolTip": "Controllers\\DebinController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAEwFcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-10T20:18:42.563Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -84,13 +130,13 @@
               "RelativeDocumentMoniker": "models\\TokenDl\\TokenDIResp.cs",
               "ToolTip": "E:\\GITHUB\\ApiBanPlaz\\models\\TokenDl\\TokenDIResp.cs",
               "RelativeToolTip": "models\\TokenDl\\TokenDIResp.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-13T19:33:19.785Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\GITHUB\\ApiBanPlaz\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -98,12 +144,11 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-13T16:25:52.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T16:25:52.865Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "CredApiRsService.cs",
               "DocumentMoniker": "E:\\GITHUB\\ApiBanPlaz\\Servicios\\CredApiRsService.cs",
               "RelativeDocumentMoniker": "Servicios\\CredApiRsService.cs",
@@ -116,67 +161,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "CredApiRs.cs",
-              "DocumentMoniker": "E:\\GITHUB\\ApiBanPlaz\\models\\TokenDl\\CredApiRs.cs",
-              "RelativeDocumentMoniker": "models\\TokenDl\\CredApiRs.cs",
-              "ToolTip": "E:\\GITHUB\\ApiBanPlaz\\models\\TokenDl\\CredApiRs.cs",
-              "RelativeToolTip": "models\\TokenDl\\CredApiRs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-11T19:25:32.687Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CredApiService.cs",
-              "DocumentMoniker": "E:\\GITHUB\\ApiBanPlaz\\Servicios\\CredApiService.cs",
-              "RelativeDocumentMoniker": "Servicios\\CredApiService.cs",
-              "ToolTip": "E:\\GITHUB\\ApiBanPlaz\\Servicios\\CredApiService.cs",
-              "RelativeToolTip": "Servicios\\CredApiService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-11T16:42:43.776Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CredApi.cs",
-              "DocumentMoniker": "E:\\GITHUB\\ApiBanPlaz\\models\\TokenDl\\CredApi.cs",
-              "RelativeDocumentMoniker": "models\\TokenDl\\CredApi.cs",
-              "ToolTip": "E:\\GITHUB\\ApiBanPlaz\\models\\TokenDl\\CredApi.cs",
-              "RelativeToolTip": "models\\TokenDl\\CredApi.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-11T16:33:47.732Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DebinController.cs",
-              "DocumentMoniker": "E:\\GITHUB\\ApiBanPlaz\\Controllers\\DebinController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DebinController.cs",
-              "ToolTip": "E:\\GITHUB\\ApiBanPlaz\\Controllers\\DebinController.cs",
-              "RelativeToolTip": "Controllers\\DebinController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-10T20:18:42.563Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "BanPlazDbContext.cs",
               "DocumentMoniker": "E:\\GITHUB\\ApiBanPlaz\\Data\\BanPlazDbContext.cs",
               "RelativeDocumentMoniker": "Data\\BanPlazDbContext.cs",
               "ToolTip": "E:\\GITHUB\\ApiBanPlaz\\Data\\BanPlazDbContext.cs",
               "RelativeToolTip": "Data\\BanPlazDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-10T21:22:18.484Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\GITHUB\\ApiBanPlaz\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -188,25 +184,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "NonceService.cs",
               "DocumentMoniker": "E:\\GITHUB\\ApiBanPlaz\\Servicios\\NonceService.cs",
               "RelativeDocumentMoniker": "Servicios\\NonceService.cs",
               "ToolTip": "E:\\GITHUB\\ApiBanPlaz\\Servicios\\NonceService.cs",
               "RelativeToolTip": "Servicios\\NonceService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-11T13:21:59.757Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "ContNonce.cs",
               "DocumentMoniker": "E:\\GITHUB\\ApiBanPlaz\\models\\Entities\\ContNonce.cs",
               "RelativeDocumentMoniker": "models\\Entities\\ContNonce.cs",
               "ToolTip": "E:\\GITHUB\\ApiBanPlaz\\models\\Entities\\ContNonce.cs",
               "RelativeToolTip": "models\\Entities\\ContNonce.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-11T13:17:17.284Z"
             }
