@@ -33,7 +33,7 @@ namespace ApiBanPlaz.models.TokenDl
         public string Cod_banco_p { get; set; }
 
         [Required]
-        public string Monto { get; set; }
+        public decimal Monto { get; set; }
 
         public string? Direccion_ip { get; set; }
     }

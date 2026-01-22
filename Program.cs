@@ -1,4 +1,6 @@
-using ApiBanPlaz.Servicios;
+using ApiBanPlaz.Servicios.CobroDl;
+using ApiBanPlaz.Servicios.General;
+using ApiBanPlaz.Servicios.TokenDl;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,18 +13,16 @@ builder.Services.AddOpenApi();
 
 builder.Services.AddDbContext<BanPlazDbContext>(options =>
 {
-    options.UseMySql(
-        builder.Configuration.GetConnectionString("CadCnMySql"),
-        ServerVersion.AutoDetect(
-            builder.Configuration.GetConnectionString("CadCnMySql")
-        )
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("CadCnSqlServer")
     );
 });
 
-builder.Services.AddScoped<CredApiService>();
 builder.Services.AddScoped<CredApiRsService>();
 builder.Services.AddScoped<NonceService>();
+
 builder.Services.AddScoped<TokenDIService>();
+builder.Services.AddScoped<CobroDIService>();
 
 var app = builder.Build();
 

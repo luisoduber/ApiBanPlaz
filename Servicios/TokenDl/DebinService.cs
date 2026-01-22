@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using ApiBanPlaz.models.TokenDl;
 using ApiBanPlaz.models.Responses;
 
-namespace ApiBanPlaz.Servicios
+namespace ApiBanPlaz.Servicios.TokenDl
 {
     public class DebinService
     {

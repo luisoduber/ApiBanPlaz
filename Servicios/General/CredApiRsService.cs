@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.DataProtection;
 using Microsoft.EntityFrameworkCore;
 using static DebinController;
 
-namespace ApiBanPlaz.Servicios
+namespace ApiBanPlaz.Servicios.General
 {
 
 
@@ -16,15 +16,15 @@ namespace ApiBanPlaz.Servicios
             _context = context;
         }
 
-        public async Task<CredApiRs> ObtCredApi()
+        public async Task<CredApiRs?> ObtCredApi()
         {
             var rsList = await _context
                 .Set<CredApiRs>()
-                .FromSqlRaw("CALL spInfCredApi()")
+                .FromSqlRaw("EXEC spInfCredApi") 
                 .AsNoTracking()
                 .ToListAsync();
 
-            return rsList.FirstOrDefault(); // Puede ser null si no existe
+            return rsList.FirstOrDefault();
         }
     }
 

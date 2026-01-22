@@ -1,6 +1,7 @@
 ﻿using ApiBanPlaz.models.Entities;
 using ApiBanPlaz.models.TokenDl;
-using ApiBanPlaz.Servicios;
+using ApiBanPlaz.Servicios.General;
+using ApiBanPlaz.Servicios.TokenDl;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Net.Http.Headers;
@@ -16,7 +17,6 @@ using System.Text;
 public class DebinController : ControllerBase
 {
     private readonly NonceService _nonceService;
-    private readonly CredApiService _credApiService;
     private readonly CredApiRsService _credApiRsService;
 
     private readonly TokenDIService _TokenDIService;
@@ -26,11 +26,10 @@ public class DebinController : ControllerBase
 
     TokenDIResp _TokenDIResp = new TokenDIResp();
     TokenDI _TokenDI = new TokenDI();
-    public DebinController(IConfiguration config, NonceService nonceService, CredApiService credApiService, 
+    public DebinController(IConfiguration config, NonceService nonceService, 
                         CredApiRsService credApiRsService, TokenDIService tokenDIService)
     {
         _nonceService = nonceService;
-        _credApiService = credApiService;
         _credApiRsService = credApiRsService;
         _config = config;
         urlBan = _config["urlBan"].ToString();
@@ -80,7 +79,6 @@ public class DebinController : ControllerBase
             );
 
         string jsonTokenDIResp = JsonConvert.SerializeObject(_TokenDIResp);
-
         bool rsValTokDIResp = await _TokenDIService.GrdTokenDIRespAsync(
             _TokenDI.IdTokenDI,
             _TokenDIResp.CodigoRespuesta,
@@ -88,7 +86,6 @@ public class DebinController : ControllerBase
             _TokenDIResp.DescripcionSistema,
             _TokenDIResp.FechaHora,
             jsonTokenDIResp);
-
 
         return Ok(new
         {
@@ -138,7 +135,7 @@ public class DebinController : ControllerBase
                 _TokenDIResp.CodigoRespuesta = codigoRespuesta;
                 _TokenDIResp.DescripcionCliente = descripcionCliente;
                 _TokenDIResp.DescripcionSistema = descripcionSistema;
-                _TokenDIResp.FechaHora = fechaHora;
+                _TokenDIResp.FechaHora =DateTime.Parse(fechaHora); 
 
                 // rsDat = await Res.Content.ReadAsStringAsync();
                 // _TokenDIResp = JsonConvert.DeserializeObject<TokenDIResp>(rsDat);
@@ -147,19 +144,6 @@ public class DebinController : ControllerBase
         return _TokenDIResp;
     }
 
-    [HttpPost("GenCredApi")]
-    public async Task<IActionResult> CrearCred()
-    {
-        string apiKey = ApiKeyGen.GenApiKey();
-        string apiKeySecret = ApiKeySecretGen.GenKeySecret();
-        await _credApiService.CrearAsync(apiKey,apiKeySecret);
-
-        return Ok(new
-        {
-            apiKey = apiKey,
-            apiKeySecret = apiKeySecret // ⚠️ mostrar SOLO esta vez
-        });
-    }
 
     public static class ApiKeyGen
     {
